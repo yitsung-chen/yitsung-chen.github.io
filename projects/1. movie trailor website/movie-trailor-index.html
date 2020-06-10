@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Trailer Website</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="player">
+      <div id="player-container">
+        <iframe class="trailor" src="" allowfullscreen allow="autoplay">
+        </iframe>
+      </div>
+      <div id="close-container">
+          <span class="close-button" aria-hidden="true">X</span>
+      </div>
+    </div>
+    <div class="jumbotron">
+      <div class="container header">
+        <div class="row header">
+          <div class="container search-container">
+            <h1 class="page-title"> <img src="img/movie-title-icon.svg" class="title-icon"> Movie Trailer Website</h1>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-4 search-container">
+            <form class="search-form" action="#">
+              <input type="text" placeholder="&#xf002; Search for Movie Title" name="search" class="search-bar">
+            </form>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-lg-4">
+            <div class="dropdown">
+              <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                All
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                <button class="dropdown-item title" type="button" disabled><b>= Movie Genre =</b></button>
+                <button class="dropdown-item type" type="button">All</button>
+                <button class="dropdown-item type" type="button">Life</button>
+                <button class="dropdown-item type" type="button">Sci-fi / Action</button>
+                <button class="dropdown-item type" type="button">Romantic</button>
+                <button class="dropdown-item type" type="button">Sports</button>
+                <button class="dropdown-item type" type="button">Animation</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row header">
+          <div class="col-xs-12 switch-container">
+            <p class="switch-label">* Regular trailer mode</p>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container body">
+      <div class="row">
+        <div class="page-button col-xs-12">
+          <div class="pagination">
+            <span class="prev">&#10094;</span>
+            <span class="page active">1</span>
+            <span class="page">2</span>
+            <span class="next">&#10095;</span>
+          </div>
+        </div>
+        <div id="movie-box" class="page1 col-xs-12 col-sm-6 col-lg-4">
+          <img id="movie-poster" src="img/batman.jpg" alt="movie poster">
+          <h1 class="movie-title">The Dark Knight</h1>
+          <p class="movie-intro">The sequal of the legendary <b>Dark Knight Trilogy</b>
+            with the storyline of Batman fights the injustice and chaos brought by the joker.</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <p class="ratings"><b>IMDb:</b> 9.0</p>
+        </div>
+        <div id="movie-box" class="page1 col-xs-12 col-sm-6 col-lg-4">
+          <img id="movie-poster" src="img/inception.jpg" alt="movie poster">
+          <h1 class="movie-title">Inception</h1>
+          <p class="movie-intro">A thief who steals secret by infiltrating
+            one's mind through a dream-sharing technology is given an inverse task
+            to not "steal" but "incept" ideas into the mind of a C.E.O.
+          </p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked portion-2"></span>
+          <span class="fa fa-star"></span>
+          <p class="ratings"><b>IMDb:</b> 8.8</p>
+        </div>
+        <div id="movie-box" class="page1 col-xs-12 col-sm-6 col-lg-4">
+          <img id="movie-poster" src="img/showman.jpg" alt="movie poster">
+          <h1 class="movie-title">The Greatest Showman</h1>
+          <p class="movie-intro">Celebrates the birth of show business and tells
+            of a visionary who rose from nothing to create a spectacular show consists
+            of dancing and musical elements that became a worldwide sensation.</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked portion-3"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <p class="ratings"><b>IMDb:</b> 7.6</p>
+        </div>
+        <div id="movie-box" class="page1 col-xs-12 col-sm-6 col-lg-4">
+          <img id="movie-poster" src="img/ralph.jpg" alt="movie poster">
+          <h1 class="movie-title">Wreck-It Ralph</h1>
+          <p class="movie-intro">A video game villain wants to be a hero and sets
+            out to fulfill his dream, but his quest brings havoc to the whole arcade
+            where he lives.</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked portion-4"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <p class="ratings"><b>IMDb:</b> 7.7</p>
+        </div>
+        <div id="movie-box" class="page1 col-xs-12 col-sm-6 col-lg-4">
+          <img id="movie-poster" src="img/insideOut.jpg" alt="movie poster">
+          <h1 class="movie-title">Inside Out</h1>
+          <p class="movie-intro">After young Riley is uprooted from her Midwest
+            life and moved to San Francisco, her emotions - Joy, Fear, Anger,
+            Disgust and Sadness - conflict on how best to navigate a new city,
+            house, and school.</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked portion-5"></span>
+          <span class="fa fa-star"></span>
+          <p class="ratings"><b>IMDb:</b> 8.2</p>
+        </div>
+        <div id="movie-box" class="page1 col-xs-12 col-sm-6 col-lg-4">
+          <img id="movie-poster" src="img/zootopia.jpg" alt="movie poster">
+          <h1 class="movie-title">Zootopia</h1>
+          <p class="movie-intro">In a city of anthropomorphic animals, a rookie
+            bunny cop and a cynical con artist fox must work together to uncover
+            a conspiracy.</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked portion-6"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <p class="ratings"><b>IMDb:</b> 8.0</p>
+        </div>
+        <div id="movie-box" class="page1 col-xs-12 col-sm-6 col-lg-4">
+          <img id="movie-poster" src="img/summer.jpg" alt="movie poster">
+          <h1 class="movie-title">500 Days of Summer</h1>
+          <p class="movie-intro">An offbeat romantic comedy about a woman who
+            doesn't believe true love exists, and the young man who falls for her.
+          </p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked portion-7"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <p class="ratings"><b>IMDb:</b> 7.7</p>
+        </div>
+        <div id="movie-box" class="page1 col-xs-12 col-sm-6 col-lg-4">
+          <img id="movie-poster" src="img/playbook.jpg" alt="movie poster">
+          <h1 class="movie-title">Silver Linings Playbook</h1>
+          <p class="movie-intro">After a stint in a mental institution, former
+            teacher Pat Solitano moves back in with his parents and tries to reconcile
+            with his ex-wife. Things get more challenging when Pat meets Tiffany,
+            a mysterious girl with problems of her own.</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked portion-8"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <p class="ratings"><b>IMDb:</b> 7.7</p>
+        </div>
+        <div id="movie-box" class="page1 col-xs-12 col-sm-6 col-lg-4">
+          <img id="movie-poster" src="img/vow.jpg" alt="movie poster">
+          <h1 class="movie-title">The Vow</h1>
+          <p class="movie-intro">A car accident puts Paige in a coma, and when she
+            wakes up with severe memory loss, her husband Leo works to win her heart again.</p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked portion-9"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <p class="ratings"><b>IMDb:</b> 6.8</p>
+        </div>
+        <div id="movie-box" class="page2 col-xs-12 col-sm-6 col-lg-4">
+          <img id="movie-poster" src="img/walter.jpg" alt="movie poster">
+          <h1 class="movie-title">The Secret Life of <br>Walter Mitty</h1>
+          <p class="movie-intro">Walter, the Life magazine department manager who
+            enjoys daydreaming, is about to embark on an extraordinary adventure
+            that will ultimately change his entire life.
+          </p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked portion-10"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <p class="ratings"><b>IMDb:</b> 7.3</p>
+        </div>
+        <div id="movie-box" class="page2 col-xs-12 col-sm-6 col-lg-4">
+          <img id="movie-poster" src="img/judge.jpg" alt="movie poster">
+          <h1 class="movie-title">The Judge</h1>
+          <p class="movie-intro">Big-city lawyer Hank Palmer returns to his childhood
+            home where his father, the town's judge, is suspected of murder. Hank
+            sets out to discover the truth and, along the way, reconnects with his
+            estranged family.
+          </p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked portion-11"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <p class="ratings"><b>IMDb:</b> 7.4</p>
+        </div>
+        <div id="movie-box" class="page2 col-xs-12 col-sm-6 col-lg-4">
+          <img id="movie-poster" src="img/joy.jpg" alt="movie poster">
+          <h1 class="movie-title">Joy</h1>
+          <p class="movie-intro">Joy is the story of the title character, who rose
+            to become founder and matriarch of a powerful family business dynasty.
+          </p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked portion-12"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <p class="ratings"><b>IMDb:</b> 6.6</p>
+        </div>
+        <div id="movie-box" class="page2 col-xs-12 col-sm-6 col-lg-4">
+          <img id="movie-poster" src="img/42.jpg" alt="movie poster">
+          <h1 class="movie-title">42</h1>
+          <p class="movie-intro">In 1947, Jackie Robinson becomes the first
+            African-American to play in Major League Baseball in the modern era
+            when he was signed by the Brooklyn Dodgers and faces considerable
+            racism in the process.
+          </p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked portion-13"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <p class="ratings"><b>IMDb:</b> 7.5</p>
+        </div>
+        <div id="movie-box" class="page2 col-xs-12 col-sm-6 col-lg-4">
+          <img id="movie-poster" src="img/moneyball.jpg" alt="movie poster">
+          <h1 class="movie-title">Moneyball</h1>
+          <p class="movie-intro">Oakland A's general manager Billy Beane's successful
+            attempt to assemble a baseball team on a lean budget by employing computer-generated
+            analysis to acquire new players.
+          </p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked portion-14"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <p class="ratings"><b>IMDb:</b> 7.6</p>
+        </div>
+        <div id="movie-box" class="page2 col-xs-12 col-sm-6 col-lg-4">
+          <img id="movie-poster" src="img/draft.jpg" alt="movie poster">
+          <h1 class="movie-title">Draft Day</h1>
+          <p class="movie-intro">At the NFL Draft, General Manager Sonny Weaver
+            has the opportunity to rebuild his team when he trades for the number
+            one pick. He must decide what he's willing to sacrifice on a life-changing
+            day for a few hundred young men with NFL dreams.
+          </p>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked portion-15"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+          <p class="ratings"><b>IMDb:</b> 6.8</p>
+        </div>
+      </div>
+      <div class="arrow-up">
+        <i class="fa fa-arrow-up"></i>
+      </div>
+    </div>
+    <script src="js/trailers.js"></script>
+  </body>
+</html>

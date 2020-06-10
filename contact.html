@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Yi-Tsung - Contact</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="favicon">
+</head>
+  <body>
+    <div class="preloader"></div>
+
+    <div class="mobile-nav-switch-container">
+      <div class="mobile-nav-switch" style="font-size:30px;cursor:pointer" onclick="openNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div id="project-overall-container">
+      <div id="contact-header-section">
+        <div class="project-banner">
+          <img src="assets/imgs/contact-icon.webp" alt="contact icon" class="project-img contact">
+        </div>
+        <h1 class="project-page-big-title contact">Let's Get In Touch</h1>
+        <div id="navbar-section" class="kaimo-page navbar-container">
+          <nav id="big-width-navbar">
+            <a class="nav-item home" href="index.html">Home</a>
+            <a class="nav-item home" href="about.html">About</a>
+            <a class="nav-item home" href="Yi-Tsung-Chen Resume.pdf" target="_blank">Resume</a>
+            <a class="nav-item home" href="contact.html">Contact</a>
+          </nav>
+          <nav id="small-width-navbar" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="small-width-navbar-content">
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="Phillip_Chen Resume.pdf" target="_blank">Resume</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div id="project-content-section">
+        <div class="one-side-large-wrapper">
+          <div class="side-wrapper">
+            <h1 class="project-section-title contact">Drop me a message</h1>
+            <p class="project-section-context contact">Or contact me through my <a href="https://www.linkedin.com/in/phillip-c-795815b7/" target="_blank" class="contact-link">LinkedIn</a> or
+              <a href="mailto:yitsung.chen95@gmail.com" class="contact-link">Email</a>
+            </p>
+            <div class="form-container">
+              <form action="https://formspree.io/yitsung.chen95@gmail.com" class="contact-form-wrapper" method="POST">
+                <label for="contact-name">Your Name :</label>
+                <div class="form-group contact-name">
+                  <input type="text" id="contact-name" class="input-text" name="contact-name" placeholder="Your Name">
+                </div>
+                <label for="email">Your Email :</label>
+                <div class="form-group contact-email">
+                  <input type="email" id="email" class="input-text" name="email" placeholder="name@example.com">
+                </div>
+                <label for="message">Your Message:</label>
+                <div class="form-group contact-message">
+                  <textarea id="message" class="input-text" name="message" rows="10" placeholder="Your Message..."></textarea>
+                </div>
+                <div class="form-group buttons">
+                  <input type="submit" value="Submit">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer-container">
+        <div class="one-side-large-wrapper">
+          <div class="side-wrapper">
+            <p class="project-section-context foot-note">&#9400; Yi-Tsung, Chen 2020. All Rights Reserved <span>- Built from scratch with HTML / CSS / JavaScript</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="assets/js/bundle.js"></script>
+  </body>
+</html>

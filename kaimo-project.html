@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yi-Tsung - Project Qaimo</title>
+    <link rel="icon" href="favicon">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <div class="preloader"></div>
+
+    <div class="mobile-nav-switch-container">
+      <div class="mobile-nav-switch" style="font-size:30px;cursor:pointer" onclick="openNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <div id="project-overall-container">
+      <div id="jumper-menu">
+        <!-- Project Section Jumper -->
+        <div class="section-jumper-menu-switch-wrapper">
+          <p class="jumper-text">Jump to &darr;</p>
+          <div class="section-jumper-menu-switch"></div>
+        </div>
+        <div class="section-jumper-wrapper">
+          <a href="#project-header-section" class="section-jumper-link"><b>&uarr; To Top</b></a>
+          <a href="#project-overview-section" class="section-jumper-link">1. Overview</a>
+          <a href="#project-methodology-section" class="section-jumper-link">2. Methodology</a>
+          <a href="#project-procedure-section" class="section-jumper-link">3. Procedure</a>
+          <a href="#project-stats-section" class="section-jumper-link">4. Recruiting Stats</a>
+          <a href="#project-result-section" class="section-jumper-link">5. Research Findings</a>
+        </div>
+      </div>
+      <div id="project-header-section">
+        <!-- Top Banner Image -->
+        <div class="project-banner">
+          <!-- <img src="assets/imgs/ux-research.webp" alt=""> -->
+          <span class="kaimo-logo">Q</span>
+        </div>
+        <!-- Project Title -->
+        <h1 class="project-page-big-title">Qaimo - Product Usability Research</h1>
+        <p class="project-page-title-description">Help an early stage startup improve its product design catering a better user experience</p>
+        <!-- Nav Bar -->
+        <div id="navbar-section" class="kaimo-page navbar-container">
+          <nav id="big-width-navbar">
+            <a class="nav-item home" href="index.html">Home</a>
+            <a class="nav-item home" href="about.html">About</a>
+            <a class="nav-item home" href="Yi-Tsung-Chen Resume.pdf" target="_blank">Resume</a>
+            <a class="nav-item home" href="contact.html">Contact</a>
+          </nav>
+          <nav id="small-width-navbar" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="small-width-navbar-content">
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="Yi-Tsung-Chen Resume.pdf" target="_blank">Resume</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </nav>
+        </div>
+
+      </div>
+      <div id="project-content-section" class="project-content-container">
+        <div id="project-intro-section">
+          <div class="two-side-small-wrapper intro-box">
+            <div class="side-wrapper intro-box">
+              <h2 class="intro-box-title">Role</h2>
+              <p class="intro-box-context">UX Researcher, Data Analyst</p>
+            </div>
+            <div class="side-wrapper intro-box">
+              <h2 class="intro-box-title">Location</h2>
+              <p class="intro-box-context">Singapore</p>
+            </div>
+            <div class="side-wrapper intro-box">
+              <h2 class="intro-box-title">Technique</h2>
+              <p class="intro-box-context">Heuristics Review, Quantitative Analysis</p>
+            </div>
+            <div class="side-wrapper intro-box">
+              <h2 class="intro-box-title">Duration</h2>
+              <p class="intro-box-context">2018 / 01 - 2018 / 04</p>
+            </div>
+          </div>
+        </div>
+        <div id="project-overview-section">
+          <div class="one-side-large-wrapper project-overview">
+            <div class="side-wrapper">
+              <h1 class="project-section-title">Overview</h1>
+              <p class="project-section-context"><b>Qaimo</b> ( recently rebranded as
+                <a href="https://www.linkedin.com/company/kaimo/about/"
+                class="project-reference-link" target="_blank" >Kaimo</a> ) is a
+                free mobile and web platform for creating personalized research
+                experiments to explore the impacts of your habits on your health.
+                Our group incorporated with the startup team to conduct an usability
+                research for its beta released product in order to align the design
+                pragmatism with real-world scenarios. Research was conducted based on
+                both qualitative and quantitative methodologies.
+              </p>
+              <p class="project-section-context">As the sole analyst in our group, I was
+                responsible for the end-to-end quantitative analysis, including methodology
+                research, metrics definition, and data visualization to quantify the testing
+                results, which validated and further supported the qualitative findings.
+                The data collected throughout the testing process, where <b>9 participants</b>
+                were recruited as the testing subjects. Each subject was asked to complete
+                <b>4 scenario tasks</b> designed to fully test the product functionality.
+              </p>
+            </div>
+            <div class="two-side-medium-wrapper">
+              <img src="assets/imgs/project-page-imgs/kaimo-home-screenshot-2.webp" alt="qaimo product interface screenshot" class="side-wrapper img">
+              <img src="assets/imgs/project-page-imgs/kaimo-home-screenshot-3.webp" alt="qaimo product interface screenshot" class="side-wrapper img">
+              <img src="assets/imgs/project-page-imgs/kaimo-home-screenshot-4.webp" alt="qaimo product interface screenshot" class="side-wrapper img">
+              <img src="assets/imgs/project-page-imgs/kaimo-home-screenshot-5.webp" alt="qaimo product interface screenshot" class="side-wrapper img">
+              <p class="img-caption">Product Interface Snapshots</p>
+            </div>
+          </div>
+        </div>
+        <div id="project-methodology-section">
+          <div class="one-side-large-wrapper project-methodology">
+            <div class="side-wrapper project-section">
+              <h1 class="project-section-title">Methodology</h1>
+              <p class="project-section-context">The quantitative metrics applied in our
+                data analysis were served to measure the 3 core foundations of product design:
+                <b>Effectiveness</b>, <b>Efficiency</b> and <b>Satisfaction</b>. While multiple
+                formula options were provided for different analysis purposes, we chose those
+                that optimized the following principles: <b>(1) Measurable impact</b>,
+                <b>(2) Avoided unexpected confusion</b> and <b>(3) Simplified the data collection
+                process</b>.
+              </p>
+            </div>
+          </div>
+          <div class="two-side-medium-wrapper project-methodology-box">
+            <div class="side-wrapper project-methodology-box">
+              <h2 class="method-type-title">Qualitative</h2>
+              <p class="method-definition-context">The <b>contextual interviews</b> were first prototyped based on our
+                initial walk-through on the product interface, and underwent <b>2 rounds of expert evaluation</b> to be finalized.
+              </p>
+              <ul class="method-definition-list">
+                <li><b>Scenario #1 : </b> Learn about the Qaimo's home page.</li>
+                <li><b>Scenario #2 : </b> Login and run a specific experiment then edit the given data.</li>
+                <li><b>Scenario #3 : </b> End the experiment and writing down the conclusions.</li>
+                <li><b>Scenario #4 : </b> Initiate your own experiment from scratch.</li>
+              </ul>
+              <p class="method-definition-context">Upon completed the interviews, <b>Jakob's Heuristic Principles</b> were kicked in to help structure
+                our final solutions
+              </p>
+            </div>
+            <div class="side-wrapper project-methodology-box">
+              <h2 class="method-type-title">Quantitative</h2>
+              <p class="method-definition-context">Metrics formulas were based on <a class="project-reference-link" href="https://usabilitygeek.com/usability-metrics-a-guide-to-quantify-system-usability/" target="_blank">this resource</a>.
+                Feel free to check out for more details.
+              </p>
+              <ul class="method-definition-list">
+                <li><b>Effectiveness : </b><span class="highlight-context">Time-based Efficiency</span>
+                  <br>Benchmark subjects efficiency against skilled user's, expert efficiency, measure unit: (goal / time-unit).
+                </li>
+                <li><b>Efficiency : </b><span class="highlight-context">Number of Errors</span>
+                  <br>Benchmark subjects total clicks per task against the minimum clicks for the same task, any additional click
+                  would be treated as redundancy error.
+                </li>
+                <li><b>Satisfaction : </b><span class="highlight-context">SEQ Score</span>
+                  <br>Score range was 1 to 10, where 1 been the easiest and 10 been the hardest.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="project-procedure-section" class="one-side-large-wrapper project-procedure">
+            <div class="side-wrapper">
+              <h2 class="project-section-sub-title">Methodology Procedure</h2>
+              <p class="project-section-context">The infographic shows detailed milestones of the research procedure. The
+                <b>4 main roles</b> were in play and rotated among our group members. Each of its function was defined
+                thoroughly below.
+              </p>
+            </div>
+            <div class="side-wrapper">
+              <img src="assets/imgs/project-page-imgs/kaimo-project-procedure-2.webp" alt="" class="one-side-large-img">
+            </div>
+          </div>
+        </div>
+        <div id="project-stats-section">
+          <div class="two-side-small-wrapper recruiting">
+            <div class="side-wrapper recruiting-title">
+              <h1 class="project-section-title recruiting-stats">Recruiting Stats</h1>
+              <p class="project-section-context recruiting-stats">In order to gain an optimal insights per cost ratio, our testing sample size
+                was targeted at around <b>10</b> and all subjects were recruited inside the campus with diverse backgrounds. Additional info about
+                the data :
+                <br>
+                <br>
+                <b>(1)</b> Every testing subjects' task completion rate was <b>100%</b>.<br>
+                <b>(2)</b> The skilled user's task completion time ( seconds ) for scenario 1-4 was:
+                <span class="highlight-context">46.95</span> &nbsp;|&nbsp; <span class="highlight-context">76.93</span> &nbsp;|&nbsp; <span class="highlight-context">94.92</span> &nbsp;|&nbsp; <span class="highlight-context">212.52</span> respectively.
+              </p>
+            </div>
+            <div class="side-wrapper recruiting-stats">
+              <span class="label recruiting-stats">Total Participants : <br><b>9</b></span>
+            </div>
+            <div class="side-wrapper recruiting-stats">
+              <span class="label recruiting-stats">Unique Nationalities : <br><b>7</b></span>
+            </div>
+            <div class="side-wrapper recruiting-stats">
+              <span class="label recruiting-stats">Unique First Languages Spoken : <br><b>7</b></span>
+            </div>
+            <div class="side-wrapper recruiting-stats">
+              <span class="label recruiting-stats">Background Ratio ( Business vs. Enginnering ) : <br><b>4 / 5</b></span>
+            </div>
+            <div class="side-wrapper recruiting-stats testing-data-wrapper">
+              <span class="label recruiting-stats"><b>Testing Results</b></span>
+              <table id="example" class="display">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Subjects</th>
+                      <th>Nationality</th>
+                      <th>Study</th>
+                      <th>Field</th>
+                      <th>First Language</th>
+                      <th>Task</th>
+                      <th>Time (sec.)</th>
+                      <th>Difficulty</th>
+                      <th>Errors</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Danish <br>Student</td>
+                      <td>Denmark</td>
+                      <td>Mechanical Engineering</td>
+                      <td>Engineering</td>
+                      <td>Danish</td>
+                      <td>scenario1</td>
+                      <td>636.44</td>
+                      <td>3.5</td>
+                      <td>6</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>German <br>Student-1</td>
+                      <td>Germany</td>
+                      <td>Aerospace Engineering</td>
+                      <td>Engineering</td>
+                      <td>German</td>
+                      <td>scenario1</td>
+                      <td>538</td>
+                      <td>4</td>
+                      <td>9</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>German <br>Student-2</td>
+                      <td>Germany</td>
+                      <td>Civil Engineering</td>
+                      <td>Engineering</td>
+                      <td>German</td>
+                      <td>scenario1</td>
+                      <td>366.8</td>
+                      <td>1</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Canadian <br>Student</td>
+                      <td>Canada</td>
+                      <td>Business Accounting</td>
+                      <td>Business</td>
+                      <td>Kinirwanda</td>
+                      <td>scenario1</td>
+                      <td>150.65</td>
+                      <td>4</td>
+                      <td>7</td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>Australian <br>Student-1</td>
+                      <td>Australia</td>
+                      <td>Business Accounting</td>
+                      <td>Business</td>
+                      <td>Mandarin</td>
+                      <td>scenario1</td>
+                      <td>294.93</td>
+                      <td>2.5</td>
+                      <td>1</td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>Dutch <br>Student</td>
+                      <td>Netherland</td>
+                      <td>International Business</td>
+                      <td>Business</td>
+                      <td>Dutch</td>
+                      <td>scenario1</td>
+                      <td>360.99</td>
+                      <td>5</td>
+                      <td>18</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>Senegalese <br>Student</td>
+                      <td>Senegalese</td>
+                      <td>Business General</td>
+                      <td>Business</td>
+                      <td>French</td>
+                      <td>scenario1</td>
+                      <td>244.83</td>
+                      <td>3</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>Taiwanese <br>Student</td>
+                      <td>Taiwan</td>
+                      <td>Chemical Engineering</td>
+                      <td>Engineering</td>
+                      <td>Mandarin</td>
+                      <td>scenario1</td>
+                      <td>319.75</td>
+                      <td>5.5</td>
+                      <td>12</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>Australian <br>Student-2</td>
+                      <td>Australia</td>
+                      <td>Industrial Design &amp; Mechical Endgineering</td>
+                      <td>Engineering</td>
+                      <td>Japanese</td>
+                      <td>scenario1</td>
+                      <td>299.17</td>
+                      <td>5</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td>Danish <br>Student</td>
+                      <td>Denmark</td>
+                      <td>Mechanical Engineering</td>
+                      <td>Engineering</td>
+                      <td>Danish</td>
+                      <td>scenario2</td>
+                      <td>311.99</td>
+                      <td>2</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>11</td>
+                      <td>German <br>Student-1</td>
+                      <td>Germany</td>
+                      <td>Aerospace Engineering</td>
+                      <td>Engineering</td>
+                      <td>German</td>
+                      <td>scenario2</td>
+                      <td>278</td>
+                      <td>8</td>
+                      <td>18</td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td>German <br>Student-2</td>
+                      <td>Germany</td>
+                      <td>Civil Engineering</td>
+                      <td>Engineering</td>
+                      <td>German</td>
+                      <td>scenario2</td>
+                      <td>350.74</td>
+                      <td>1</td>
+                      <td>15</td>
+                    </tr>
+                    <tr>
+                      <td>13</td>
+                      <td>Canadian <br>Student</td>
+                      <td>Canada</td>
+                      <td>Business Accounting</td>
+                      <td>Business</td>
+                      <td>Kinirwanda</td>
+                      <td>scenario2</td>
+                      <td>238.55</td>
+                      <td>6</td>
+                      <td>10</td>
+                    </tr>
+                    <tr>
+                      <td>14</td>
+                      <td>Australian <br>Student-1</td>
+                      <td>Australia</td>
+                      <td>Business Accounting</td>
+                      <td>Business</td>
+                      <td>Mandarin</td>
+                      <td>scenario2</td>
+                      <td>147.4</td>
+                      <td>3</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>15</td>
+                      <td>Dutch <br>Student</td>
+                      <td>Netherland</td>
+                      <td>International Business</td>
+                      <td>Business</td>
+                      <td>Dutch</td>
+                      <td>scenario2</td>
+                      <td>257.09</td>
+                      <td>7</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>16</td>
+                      <td>Senegalese <br>Student</td>
+                      <td>Senegalese</td>
+                      <td>Business General</td>
+                      <td>Business</td>
+                      <td>French</td>
+                      <td>scenario2</td>
+                      <td>297.11</td>
+                      <td>6</td>
+                      <td>15</td>
+                    </tr>
+                    <tr>
+                      <td>17</td>
+                      <td>Taiwanese <br>Student</td>
+                      <td>Taiwan</td>
+                      <td>Chemical Engineering</td>
+                      <td>Engineering</td>
+                      <td>Mandarin</td>
+                      <td>scenario2</td>
+                      <td>266.09</td>
+                      <td>4</td>
+                      <td>12</td>
+                    </tr>
+                    <tr>
+                    <td >18</td>
+                      <td>Australian <br>Student-2</td>
+                      <td>Australia</td>
+                      <td>Industrial Design &amp; Mechical Endgineering</td>
+                      <td>Engineering</td>
+                      <td>Japanese</td>
+                      <td>scenario2</td>
+                      <td>285.29</td>
+                      <td>8</td>
+                      <td>15</td>
+                    </tr>
+                    <tr>
+                      <td>19</td>
+                      <td>Danish <br>Student</td>
+                      <td>Denmark</td>
+                      <td>Mechanical Engineering</td>
+                      <td>Engineering</td>
+                      <td>Danish</td>
+                      <td>scenario3</td>
+                      <td>105</td>
+                      <td>4.5</td>
+                      <td>7</td>
+                    </tr>
+                    <tr>
+                      <td>20</td>
+                      <td>German <br>Student-1</td>
+                      <td>Germany</td>
+                      <td>Aerospace Engineering</td>
+                      <td>Engineering</td>
+                      <td>German</td>
+                      <td>scenario3</td>
+                      <td>276</td>
+                      <td>4</td>
+                      <td>46</td>
+                    </tr>
+                    <tr>
+                      <td>21</td>
+                      <td>German <br>Student-2</td>
+                      <td>Germany</td>
+                      <td>Civil Engineering</td>
+                      <td>Engineering</td>
+                      <td>German</td>
+                      <td>scenario3</td>
+                      <td>301.24</td>
+                      <td>3</td>
+                      <td>8</td>
+                    </tr>
+                    <tr>
+                      <td>22</td>
+                      <td>Canadian <br>Student</td>
+                      <td>Canada</td>
+                      <td>Business Accounting</td>
+                      <td>Business</td>
+                      <td>Kinirwanda</td>
+                      <td>scenario3</td>
+                      <td>341.68</td>
+                      <td>5</td>
+                      <td>29</td>
+                    </tr>
+                    <tr>
+                      <td>23</td>
+                      <td>Australian <br>Student-1</td>
+                      <td>Australia</td>
+                      <td>Business Accounting</td>
+                      <td>Business</td>
+                      <td>Mandarin</td>
+                      <td>scenario3</td>
+                      <td>406.21</td>
+                      <td>7.5</td>
+                      <td>56</td>
+                    </tr>
+                    <tr>
+                      <td>24</td>
+                      <td>Dutch <br>Student</td>
+                      <td>Netherland</td>
+                      <td>International Business</td>
+                      <td>Business</td>
+                      <td>Dutch</td>
+                      <td>scenario3</td>
+                      <td>106.04</td>
+                      <td>1.5</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>25</td>
+                      <td>Senegalese <br>Student</td>
+                      <td>Senegalese</td>
+                      <td>Business General</td>
+                      <td>Business</td>
+                      <td>French</td>
+                      <td>scenario3</td>
+                      <td>772.43</td>
+                      <td>7</td>
+                      <td>51</td>
+                    </tr>
+                    <tr>
+                      <td>26</td>
+                      <td>Taiwanese <br>Student</td>
+                      <td>Taiwan</td>
+                      <td>Chemical Engineering</td>
+                      <td>Engineering</td>
+                      <td>Mandarin</td>
+                      <td>scenario3</td>
+                      <td>464.51</td>
+                      <td>7.5</td>
+                      <td>39</td>
+                    </tr>
+                    <tr>
+                      <td>27</td>
+                      <td>Australian <br>Student-2</td>
+                      <td>Australia</td>
+                      <td>Industrial Design &amp; Mechical Endgineering</td>
+                      <td>Engineering</td>
+                      <td>Japanese</td>
+                      <td>scenario3</td>
+                      <td>241.14</td>
+                      <td>3</td>
+                      <td>21</td>
+                    </tr>
+                    <tr>
+                      <td>28</td>
+                      <td>Danish <br>Student</td>
+                      <td>Denmark</td>
+                      <td>Mechanical Engineering</td>
+                      <td>Engineering</td>
+                      <td>Danish</td>
+                      <td>scenario4</td>
+                      <td>405</td>
+                      <td>4.5</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>29</td>
+                      <td>German <br>Student-1</td>
+                      <td>Germany</td>
+                      <td>Aerospace Engineering</td>
+                      <td>Engineering</td>
+                      <td>German</td>
+                      <td>scenario4</td>
+                      <td>428</td>
+                      <td>6</td>
+                      <td>16</td>
+                    </tr>
+                    <tr>
+                      <td>30</td>
+                      <td>German <br>Student-2</td>
+                      <td>Germany</td>
+                      <td>Civil Engineering</td>
+                      <td>Engineering</td>
+                      <td>German</td>
+                      <td>scenario4</td>
+                      <td>491</td>
+                      <td>4</td>
+                      <td>0</td>
+                    </tr>
+                    <tr>
+                      <td>31</td>
+                      <td>Canadian <br>Student</td>
+                      <td>Canada</td>
+                      <td>Business Accounting</td>
+                      <td>Business</td>
+                      <td>Kinirwanda</td>
+                      <td>scenario4</td>
+                      <td>465.03</td>
+                      <td>2</td>
+                      <td>11</td>
+                    </tr>
+                    <tr>
+                      <td>32</td>
+                      <td>Australian <br>Student-1</td>
+                      <td>Australia</td>
+                      <td>Business Accounting</td>
+                      <td>Business</td>
+                      <td>Mandarin</td>
+                      <td>scenario4</td>
+                      <td>289.18</td>
+                      <td>2.5</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>33</td>
+                      <td>Dutch <br>Student</td>
+                      <td>Netherland</td>
+                      <td>International Business</td>
+                      <td>Business</td>
+                      <td>Dutch</td>
+                      <td>scenario4</td>
+                      <td>306.59</td>
+                      <td>2</td>
+                      <td>2</td>
+                    </tr>
+                    <tr>
+                      <td>34</td>
+                      <td>Senegalese <br>Student</td>
+                      <td>Senegalese</td>
+                      <td>Business General</td>
+                      <td>Business</td>
+                      <td>French</td>
+                      <td>scenario4</td>
+                      <td>834.19</td>
+                      <td>5</td>
+                      <td>21</td>
+                    </tr>
+                    <tr>
+                      <td>35</td>
+                      <td>Taiwanese <br>Student</td>
+                      <td>Taiwan</td>
+                      <td>Chemical Engineering</td>
+                      <td>Engineering</td>
+                      <td>Mandarin</td>
+                      <td>scenario4</td>
+                      <td>238.83</td>
+                      <td>3</td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <td>36</td>
+                      <td>Australian <br>Student-2</td>
+                      <td>Australia</td>
+                      <td>Industrial Design &amp; Mechical Endgineering</td>
+                      <td>Engineering</td>
+                      <td>Japanese</td>
+                      <td>scenario4</td>
+                      <td>767.63</td>
+                      <td>9</td>
+                      <td>39</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+          </div>
+        </div>
+        <div id="project-result-section">
+          <div class="one-side-large-wrapper">
+            <div class="side-wrapper">
+              <h1 class="project-section-title">Research Findings</h1>
+              <p class="project-section-context">Our recommendations below listed out some of the major issues occured along the testing process.
+                Sythesized across heuristics review, qualitative feedbacks ( See the most frequent comments from the subjects below ), and
+                supported by the quantitative analysis ( See visualizations below ).
+              </p>
+              <img src="assets/imgs/project-page-imgs/kaimo-project-solution.webp" alt="" class="kaimo-suggestion-img">
+            </div>
+          </div>
+          <div class="one-side-large-wrapper">
+            <div class="side-wrapper">
+              <h2 class="project-section-sub-title analysis-result">Most Frequent Feedbacks</h2>
+              <p class="project-section-context feedbacks">
+                " Profile page is too wordy with no clear interpretations, I don't know how my data will be handled
+                and whether the application is free or not? "
+              </p>
+              <p class="project-section-context feedbacks">
+                " The buttons are not salient to me, not sure what is clickable and what is not."
+              </p>
+              <p class="project-section-context feedbacks">
+                " No clue on how to <b>End Experiment</b>, there's no clear instruction on how to do so. "
+              </p>
+              <p class="project-section-context feedbacks">
+                " What's the difference between <b>AB Test</b> and <b>Randomized Trials</b>? Think I'll just randomly pick one to design my experiment."
+              </p>
+            </div>
+          </div>
+          <div class="one-side-large-wrapper">
+            <div class="side-wrapper">
+              <h2 class="project-section-sub-title analysis-result quant">Quantitative Analysis</h2>
+            </div>
+          </div>
+          <div class="two-side-large-wrapper">
+            <div class="side-wrapper kaimo-data-viz-wrapper">
+              <h2 class="project-section-sub-title">1. Efficiency</h2>
+              <p class="project-section-context"><b>Scenario 2 & 3</b> were much suitable to be measured by this metrics due to their
+                <b>straightforward testing purposes</b> in which we designed each task with only 1 solution. The ideal case for a good design is to minimize
+                the gap between skilled users' and novice users' performance.
+              </p>
+              <p class="project-section-context">
+                <b>Scenario 3</b> resulted in shorter gap compared to <b>Scenario 2</b>, but also had the greatest range and variation
+                among all other tasks. With such observation and a minor differences in fact, the design involved in these 2 scenarios
+                were all worth investigating.
+              </p>
+              <p class="project-section-context">
+                * Click &nbsp;<button type="button" name="button" class="chart-switch">More Charts</button>&nbsp; to see more details.
+              </p>
+            </div>
+            <div class="side-wrapper kaimo-data-viz-wrapper">
+              <div class="flip-card">
+                <img src="assets/imgs/project-page-imgs/efficiency.webp" alt="" class="kaimo-data-viz front-card">
+                <img src="assets/imgs/project-page-imgs/efficiency-distribution.webp" alt="" class="kaimo-data-viz back-card">
+              </div>
+            </div>
+          </div>
+          <br><br>
+          <div class="two-side-large-wrapper">
+            <div class="side-wrapper kaimo-data-viz-wrapper">
+              <h2 class="project-section-sub-title">2. Effectiveness</h2>
+              <p class="project-section-context"><b>Scenario 3</b> led to way more errors compared to the rest yet also had the most efficient completion rate.
+                The most frequent frustration encountered during this scenario was <b><i>inability to find the “end study” function</i></b> ,
+                resulting in many extraneous clicks among the incorrect tabs.
+              </p>
+              <p class="project-section-context">
+                For <b>Scenario 4's</b>, 5 out of all 9 subjects created a scientifically invalid experiments. The <b>100%</b> completion rate regarded to this
+                task was somewhat due to users' blindly guessing and random chance, which were justified by qualitative user feedbacks.
+              </p>
+            </div>
+            <div class="side-wrapper kaimo-data-viz-wrapper">
+              <img src="assets/imgs/project-page-imgs/effectiveness.webp" alt="" class="kaimo-data-viz">
+            </div>
+          </div>
+          <br><br>
+          <div class="two-side-large-wrapper">
+            <div class="side-wrapper kaimo-data-viz-wrapper">
+              <h2 class="project-section-sub-title">3. Satisifaction</h2>
+              <p class="project-section-context">Though none of the scenarios were rated as absurdly high, all testing results indicated
+                certain levels of frustration from the users while interacted with the product.
+              </p>
+              <p class="project-section-context">
+                Specifically the scenarios involved with saving data, editing and finding the "end study” function were rated as the highest difficulty.
+                As a result, our recommendations relevant to these were of higher priority.
+              </p>
+            </div>
+            <div class="side-wrapper kaimo-data-viz-wrapper">
+              <img src="assets/imgs/project-page-imgs/difficulty.webp" alt="" class="kaimo-data-viz">
+            </div>
+          </div>
+          <br><br>
+        </div>
+      </div>
+      <div id="footer-container">
+        <div class="one-side-large-wrapper">
+          <div class="side-wrapper">
+            <p class="project-section-context foot-note">&#9400; Yi-Tsung, Chen 2020. All Rights Reserved <span>- Built from scratch with HTML / CSS / JavaScript</span></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/bundle.js"></script>
+  </body>
