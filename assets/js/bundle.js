@@ -1,15 +1,9 @@
-$('.preloader').animate({"opacity":"1"},500);
+// $('.preloader').animate({"opacity":"1"},500);
 
 $(window).on("load", function(){
 
-  $('.preloader').fadeOut(750, function(){
-    $('.header-container').animate({"opacity":"1"},700);
-    $('.navbar-container').animate({"opacity":"1"},700);
-    $('#home-project-section').animate({"opacity":"1"},700);
-
-
     if ($(document).find("title").text() !== "Yi-Tsung Chen") {
-      $('#project-overall-container').animate({"opacity":"1"},700);
+      $('#project-overall-container').animate({"opacity":"1"},500);
 
 
       if ($(document).find("title").text() === "Yi-Tsung - Project Qaimo") {
@@ -73,12 +67,15 @@ $(window).on("load", function(){
         $(".section-jumper-menu-switch").toggleClass("jumper-switch-on");
       });
 
+    }else {
+      $('.header-container').animate({"opacity":"1"},500);
+      // $('.navbar-container').animate({"opacity":"1"},200);
+      $('#home-project-section').animate({"opacity":"1"},500);
     }
-
 
     // Mobile version menu animation when the device width is < 576 px
     if (window.innerWidth < 576) {
-      $('.mobile-nav-switch-container').animate({"opacity":"1"},700);
+      $('.mobile-nav-switch-container').animate({"opacity":"1"},500);
     }
 
       // Mobile version menu animation when the device width resized until is < 576 px
@@ -90,8 +87,8 @@ $(window).on("load", function(){
       }
     });
 
-  });
 
+  // $('.preloader').fadeOut(750, function(){ });
   // $('.header-container').animate({"opacity":"1"},700);
   // $('.navbar-container').animate({"opacity":"1"},300);
   // $('#home-project-section').animate({"opacity":"1"},700);

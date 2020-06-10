@@ -66,9 +66,9 @@ p.footer{
 
 /* Home Page Nav Bar Styling */
 .navbar-container {
-  opacity:0;
+  /* opacity:0; */
   transition: all .35s;
-  margin: 0% 25% 20% 25%;
+  margin: 7% 25% 20% 25%;
   width: 50%;
 }
 .navbar-container nav{
@@ -504,15 +504,6 @@ div.web-dev>img{
 }
 
 
-
-
-
-
-
-
-
-
-
 /* Project Body Contents Styling, common */
 #project-overall-container{
   opacity: 0;
@@ -613,7 +604,6 @@ div.web-dev>img{
   color: white;
   transition: color .25s, background .25s;
 }
-
 
 
 .project-page-big-title{
@@ -1675,8 +1665,6 @@ ol.project-section-context>li{
     display: none;
   }
 }
-
-
 
 
 

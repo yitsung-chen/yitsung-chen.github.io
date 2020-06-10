@@ -9,7 +9,7 @@
     <link rel="icon" href="favicon">
   </head>
   <body>
-    <div class="preloader"></div>
+    <!-- <div class="preloader"></div> -->
     <div class="mobile-nav-switch-container">
       <div class="mobile-nav-switch" style="font-size:30px;cursor:pointer" onclick="openNav()">
         <div></div>
@@ -22,29 +22,29 @@
       <p class="home-header-greetings">I'm a problem solver with
         a huge passion on research and develop sustainable solution for human-centered design.
       </p>
-    </div>
-    <div id="navbar-section" class="navbar-container">
-      <nav id="big-width-navbar">
-        <a class="nav-item home" href="index.html">Home</a>
-        <a class="nav-item home" href="about.html">About</a>
-        <a class="nav-item home" href="Yi-Tsung-Chen Resume.pdf" target="_blank">Resume</a>
-        <a class="nav-item home" href="contact.html">Contact</a>
-      </nav>
-      <nav id="small-width-navbar" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="small-width-navbar-content">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="Yi-Tsung-Chen Resume.pdf" target="_blank">Resume</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </nav>
+      <div id="navbar-section" class="navbar-container">
+        <nav id="big-width-navbar">
+          <a class="nav-item home" href="index.html">Home</a>
+          <a class="nav-item home" href="about.html">About</a>
+          <a class="nav-item home" href="Yi-Tsung-Chen Resume.pdf" target="_blank">Resume</a>
+          <a class="nav-item home" href="contact.html">Contact</a>
+        </nav>
+        <nav id="small-width-navbar" class="overlay">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="small-width-navbar-content">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Yi-Tsung-Chen Resume.pdf" target="_blank">Resume</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </nav>
+      </div>
     </div>
     <div id="home-project-section">
       <!-- UX Research Project -->
       <div class="project-card">
         <div class="ux-research">
-          <img src="assets/imgs/kaimo-home-screenshot.webp" alt="qaimo home page screenshot">
+          <img src="assets/imgs/kaimo-home-screenshot.jpg" alt="qaimo home page screenshot" class="project-thumb-nail">
         </div>
         <a class="project-link" href="kaimo-project.html">
           <h1 class="project-name">- User Research Project -</h1>
@@ -56,7 +56,7 @@
       <!-- Social Media Project -->
       <div class="project-card">
         <div class="social-media">
-          <img src="assets/imgs/social-media-analyst.webp" alt="teledirect-logo">
+          <img src="assets/imgs/social-media-analyst.jpg" alt="teledirect-logo" class="project-thumb-nail">
         </div>
         <a class="project-link" href="social-media-project.html">
           <h1 class="project-name">- Business Analyst -</h1>
@@ -68,7 +68,7 @@
       <!-- MLB Data Viz Project -->
       <div class="project-card">
         <div class="data-viz">
-          <img src="assets/imgs/mlb-data-viz-2.webp" alt="mlb project screenshot">
+          <img src="assets/imgs/mlb-data-viz-2.jpg" alt="mlb project screenshot" class="project-thumb-nail">
         </div>
         <a class="project-link" href="data-viz.html">
           <h1 class="project-name data-viz">- Data Visualization Dashboard -</h1>
@@ -80,7 +80,7 @@
       <!-- Web Development Project -->
       <div class="project-card">
         <div class="web-dev">
-          <img src="assets/imgs/web-dev-img.webp" alt="web development project example screenshot">
+          <img src="assets/imgs/web-dev-img.jpg" alt="web development project example screenshot" class="project-thumb-nail">
         </div>
         <a class="project-link">
           <h1 class="project-name web-dev">- Mini Web Projects -</h1>
@@ -109,5 +109,14 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="assets/js/bundle.js"></script>
+    <script type="text/javascript">
+      //
+      // var alternateUrl;
+      //
+      // $("img").bind("error",function(){
+      //   alternateUrl = $(this).attr("src").slice(0, $(this).attr("src").length-3)+"jpg";
+      //   $(this).attr("src",alternateUrl);
+      // });
+    </script>
   </body>
 </html>
