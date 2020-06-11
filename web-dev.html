@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Yi-Tsung - About</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="favicon">
+</head>
+  <body>
+    <!-- <div class="preloader"></div> -->
+
+    <div class="mobile-nav-switch-container">
+      <div class="mobile-nav-switch" style="font-size:30px;cursor:pointer" onclick="openNav()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div id="project-overall-container">
+      <div id="jumper-menu">
+        <!-- Project Section Jumper -->
+        <div class="section-jumper-menu-switch-wrapper">
+          <p class="jumper-text">Jump to &darr;</p>
+          <div class="section-jumper-menu-switch"></div>
+        </div>
+        <div class="section-jumper-wrapper">
+          <a href="#web-dev-project-header-section" class="section-jumper-link"><b>&uarr; Back To Top</b></a>
+          <a href="#movie-trailer-website" class="section-jumper-link">1. Movie Trailer Website</a>
+          <a href="#color-guessing-game" class="section-jumper-link">2. Color Guessing Game</a>
+          <a href="#todo-list" class="section-jumper-link">3. Todo List Project</a>
+        </div>
+      </div>
+      <div id="web-dev-project-header-section">
+        <div class="project-banner">
+          <img src="assets/imgs/web-dev-img.jpg" alt="web development project images" class="project-img rect web-dev">
+        </div>
+        <h1 class="project-page-big-title">Mini Web Development Projects</h1>
+        <p class="project-page-title-description web-dev">A collection of pet projects built to sharpen the Front-End Web Techniques</p>
+        <div id="navbar-section" class="shorter-bottom-marg navbar-container">
+          <nav id="big-width-navbar">
+            <a class="nav-item home" href="index.html">Home</a>
+            <a class="nav-item home" href="about.html">About</a>
+            <a class="nav-item home" href="Yi-Tsung-Chen Resume.pdf" target="_blank">Resume</a>
+            <a class="nav-item home" href="contact.html">Contact</a>
+          </nav>
+          <nav id="small-width-navbar" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="small-width-navbar-content">
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="Yi-Tsung-Chen Resume.pdf" target="_blank">Resume</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div id="project-content-section" class="project-content-container">
+        <div id="movie-trailer-website">
+          <div class="one-side-large-wrapper">
+            <div class="side-wrapper">
+              <h1 class="project-section-title">Movie Trailer Website</h1>
+              <p class="project-page-title-description web-dev">Inspired by the project from Udacity which is developed using Python</p>
+            </div>
+            <div class="project-link-wrapper">
+              <a href="projects/movie-trailor-website/movie-trailor-index.html" target="_blank">&#8594; VIEW PROJECT &#8592;</a>
+            </div>
+            <div class="one-side-large-wrapper">
+              <div class="side-wrapper">
+                <img src="assets/imgs/project-page-imgs/movie-trailer.jpg" alt="movie trailer screenshot" class="one-side-large-img web-dev-wrapper">
+              </div>
+            </div>
+            <div class="one-side-small-wrapper web-dev-wrapper">
+              <div class="side-wrapper">
+                <h2 class="project-section-sub-title web-dev-wrapper">User Story</h2>
+                <ul class="project-section-context web-dev-wrapper">
+                  <li>Users can click the poster to see the up to <b>15</b> movie trailers from youtube.</li>
+                  <li>Users can view the movies' introduction and IMDB's rating.</li>
+                  <li>User can decide what movies to display by filtering the genres or searching via key words.</li>
+                  <li>User can toggle the icon to different version of trailers: <b>The Official Trailer</b> or the <b>Honest Trailer</b>
+                    <br>( <b>Warning! Spoiler Alert</b> ).</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="color-guessing-game">
+          <div class="one-side-large-wrapper">
+            <div class="side-wrapper">
+              <h1 class="project-section-title">RGB Color Guessing Game</h1>
+              <p class="project-page-title-description web-dev">Project instructed by Colt Steele in his Web Development Bootcamp at Udemy</p>
+            </div>
+            <div class="project-link-wrapper">
+              <a href="projects/color-guessing-game/colorGuessing.html" target="_blank">&#8594; VIEW PROJECT &#8592;</a>
+            </div>
+            <div class="side-wrapper">
+              <img src="assets/imgs/project-page-imgs/color-guessing.jpg" alt="color guessing game screenshot" class="one-side-large-img web-dev-wrapper">
+            </div>
+            <div class="one-side-small-wrapper web-dev-wrapper">
+              <div class="side-wrapper">
+                <h2 class="project-section-sub-title web-dev-wrapper">User Story</h2>
+                <ul class="project-section-context web-dev-wrapper">
+                  <li>Users will guess the color corresponds to the RGB value showed on top by clicking the blocks.</li>
+                  <li>Users can choose the game difficulty level by either the <b>Easy</b> or <b>Hard</b> mode.</li>
+                  <li>User restart the game by clicking the <b>NEW COLORS</b> button.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div id="todo-list">
+          <div class="one-side-large-wrapper">
+            <div class="side-wrapper">
+              <h1 class="project-section-title">Simple Todo List</h1>
+              <p class="project-page-title-description web-dev">Project instructed by Colt Steele in his Web Development Bootcamp at Udemy</p>
+            </div>
+            <div class="project-link-wrapper">
+              <a href="projects/todo-List-Project/index.html" target="_blank">&#8594; VIEW PROJECT &#8592;</a>
+            </div>
+            <div class="side-wrapper">
+              <img src="assets/imgs/project-page-imgs/to-do-list.jpg" alt="To do list screenshot" class="one-side-large-img web-dev-wrapper">
+            </div>
+            <div class="one-side-small-wrapper web-dev-wrapper">
+              <div class="side-wrapper">
+                <h2 class="project-section-sub-title web-dev-wrapper">User Story</h2>
+                <ul class="project-section-context web-dev-wrapper">
+                  <li>Users can add new tasks by typing tasks name in the area which shows <b>What to do Next ?</b>.</li>
+                  <li>Users can can cross over the list which have been completed by clicking the tasks.</li>
+                  <li>User can delete the task by hover over the tasks and click the red trash icon on the left.</li>
+                  <li>User can show or hide the task input section by toggling the circle icon on the top right corner.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div id="footer-container">
+        <div class="one-side-large-wrapper">
+          <div class="side-wrapper">
+            <p class="project-section-context foot-note">&#9400; Yi-Tsung, Chen 2020. All Rights Reserved <span>- Built from scratch with HTML / CSS / JavaScript</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="assets/js/bundle.js"></script>
+  </body>
+</html>

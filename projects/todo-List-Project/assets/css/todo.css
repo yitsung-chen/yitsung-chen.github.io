@@ -1,0 +1,113 @@
+body{
+  font-family: Roboto;
+  background: #003973;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #E5E5BE, #003973);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #E5E5BE, #003973); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+h1{
+  background-color: #2980b9;
+  letter-spacing: 1.5px;
+  color: white;
+  margin: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: normal;
+}
+#container{
+  width: 550px;
+  background-color: #f7f7f7;
+  margin: 100px auto;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5)
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  background-color: white;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+}
+li:hover{
+  cursor: pointer;
+  font-weight: 500;
+}
+li:nth-child(2n){
+  background-color: #f7f7f7;
+}
+
+input{
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #2980b9;
+  background-color: #f7f7f7;
+  width: 100%;
+  border: 2px solid rgba(0,0,0,0);
+  padding: 13px 13px 13px 20px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+input:hover{
+  border: 2px solid #5ca9db;
+  transition: all .12s linear;
+}
+input:focus{
+  background-color: white;
+  transition: all .2s;
+  border: 2px solid #2980b9;
+  outline: none;
+}
+
+span{
+  background: #e74c3c;
+  height: 40px;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+  width: 0px;
+  display: inline-block;
+  opacity: 0;
+}
+li:hover span{
+  width: 40px;
+  transition: all .25s linear;
+  opacity:1;
+}
+
+.fa-minus-circle{
+  float: right;
+}
+.fa-minus-circle:hover{
+  cursor: pointer;
+  transform:scale(1.2);
+}
+.fa-plus-circle{
+  float: right;
+}
+.fa-plus-circle:hover{
+  cursor: pointer;
+  transform:scale(1.2);
+}
+
+.done{
+  color: gray;
+  text-decoration: line-through;
+}
+
+.inputHide{
+  display: none;
+}
+
+@media (max-width:620px) {
+  #container{
+    width: 420px;
+    font-size: 12px;
+  }
+}
