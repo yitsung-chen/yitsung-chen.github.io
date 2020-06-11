@@ -1914,6 +1914,14 @@ ul.project-section-context.web-dev-wrapper{
   margin-bottom: 0px;
 }
 
+.project-reference-link.movie-trailer{
+  color: #f9a513;
+}
+.project-reference-link.movie-trailer:hover{
+  color: #f39a13;
+  border-bottom: 3px solid #f39a13;
+}
+
 @media (max-width: 1199.98px){
   .one-side-small-wrapper.web-dev-wrapper{
     /* padding-top: 0; */
