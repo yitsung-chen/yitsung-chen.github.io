@@ -119,6 +119,7 @@ document.getElementById("glossary-close-btn").addEventListener("click", function
 document.getElementById("dash-btn").addEventListener("click", function(){
   var dash = document.getElementById("dashboard-container");
   var returnBtn = document.getElementById("return-btn");
+  var returnTxt = document.getElementById("return-text");
 
   // Show the dashboard layout
   if (dash.style.display === "grid") {
@@ -126,6 +127,7 @@ document.getElementById("dash-btn").addEventListener("click", function(){
     return;
   }else{
     fadeOut(returnBtn,14);
+    fadeOut(returnTxt, 14);
     fadeIn(dash, "grid", 16);
     scrollDown("dashboard-container",16);
 
@@ -605,11 +607,11 @@ function seasonStats(playerId, currentSeason){
 function InfoDisplay(playerId, playerInfoData, preloader){
 
   var dashHeaderContainer = document.getElementById("dash-header");
-  // var playerImg = new Image();
+  var playerImg = new Image();
   // var playerImgUrl = "https://securea.mlb.com/mlb/images/players/head_shot/" + playerId + ".jpg";
-  // var pitcherUrl = "https://getdrawings.com/img/baseball-player-silhouette-vector-24.jpg";
-  // var batterUrl = "https://getdrawings.com/img/baseball-player-silhouette-vector-4.jpg";
-  // var img = document.getElementById("player-pic");
+  var pitcherUrl = "https://getdrawings.com/img/baseball-player-silhouette-vector-24.jpg";
+  var batterUrl = "https://getdrawings.com/img/baseball-player-silhouette-vector-4.jpg";
+  var img = document.getElementById("player-pic");
   var returnBtn = document.getElementById("return-btn");
   var weekAvgEle = document.getElementById("w-avg");
 
@@ -619,21 +621,27 @@ function InfoDisplay(playerId, playerInfoData, preloader){
   // }
   //
   // playerImg.onerror = function(){
-  //   playerImg.onload = function(){
-  //     displayInfo()
-  //     img.src = this.src;
-  //   }
-  //
-  //   if (playerInfoData.primary_position_txt === "P") {
-  //     playerImg.src = pitcherUrl;
-  //   }else{
-  //     playerImg.src = batterUrl;
-  //   }
+  playerImg.onload = function(){
+    displayInfo()
+    img.src = this.src;
+  }
+
+  if (playerInfoData.primary_position_txt === "P") {
+    playerImg.src = pitcherUrl;
+  }else{
+    playerImg.src = batterUrl;
+  }
+  // }
+
+
+  // if (playerInfoData.primary_position_txt === "P") {
+  //   console.log("yes");
+  //   img.src = pitcherUrl;
+  // }else{
+  //   img.src = batterUrl;
   // }
   //
-  // playerImg.src = playerImgUrl;
-
-  displayInfo();
+  // displayInfo();
 
   function displayInfo(){
 
@@ -806,7 +814,7 @@ function resetContent() {
   }
 
   //Remove and initial player img
-  
+
   // document.getElementById("player-pic").src = "";
 
   // Reset name and jersy number section, then remove the class
@@ -1227,8 +1235,9 @@ function dashboardBuilder(kpi){
 function dashConstruction(kpi, metricsBench, barChart, donutLabel, donutDefault, donutChart, lineChart, height, width, seasonsArray){
 
   var returnBtn = document.getElementById("return-btn");
+  var returnTxt = document.getElementById("return-text");
 
-  barConstruction(barChart, kpi, metricsBench, height, width, seasonsArray, returnBtn);
+  barConstruction(barChart, kpi, metricsBench, height, width, seasonsArray, returnBtn, returnTxt);
   donutContruction("yes", donutDefault, donutChart, donutLabel, width, height);
   lineConstruction(lineChart, width, height, seasonsArray);
 
@@ -1247,12 +1256,14 @@ function dashConstruction(kpi, metricsBench, barChart, donutLabel, donutDefault,
       dashboardBuilder(kpi);
 
       fadeIn(returnBtn, "inline-block", 10);
+      fadeIn(returnTxt, "inline-block", 10);
     }
   }, 80);
 
   setTimeout(function(){
     if (returnBtn.style.opacity === "0") {
       fadeIn(returnBtn, "inline-block", 10);
+      fadeIn(returnTxt, "inline-block", 10);
     }
   }, 300);
 }
@@ -1264,6 +1275,7 @@ function dropdown(kpi, metricsBench, barChart, lineChart, height, width, seasons
   var lineMetrics = document.getElementById("line-metrics-option");
   var metrics = document.querySelectorAll("#metrics-title>th");
   var returnBtn = document.getElementById("return-btn");
+  var returnTxt = document.getElementById("return-text");
 
   if (barMetrics.innerHTML === "") {
 
@@ -1286,7 +1298,7 @@ function dropdown(kpi, metricsBench, barChart, lineChart, height, width, seasons
         kpi =  currentMetrics;
       }
 
-      updateBar(kpi, barChart, width, height, seasonsArray, metricsBench, returnBtn);
+      updateBar(kpi, barChart, width, height, seasonsArray, metricsBench, returnBtn, returnTxt);
 
       // Resize window
       // window.addEventListener("resize", function(){
@@ -1943,7 +1955,7 @@ function donutContruction(init, dataEntry, donutChart, donutLabel, width, height
 }
 
 // Create bar chart
-function barConstruction(barChart, kpi, metricsBench, height, width, seasonsArray, returnBtn){
+function barConstruction(barChart, kpi, metricsBench, height, width, seasonsArray, returnBtn, returnTxt){
   var position = document.getElementsByClassName("grid-item")[0].innerText.slice(11,);
   var benchmark;
 
@@ -2142,18 +2154,20 @@ function barConstruction(barChart, kpi, metricsBench, height, width, seasonsArra
         dashboardBuilder(kpi);
 
         fadeIn(returnBtn, "inline-block", 10);
+        fadeIn(returnTxt, "inline-block", 10);
       }
     }, 80);
 
     setTimeout(function(){
       if (returnBtn.style.opacity === "0") {
         fadeIn(returnBtn, "inline-block", 10);
+        fadeIn(returnTxt, "inline-block", 10);
       }
     }, 300);
 }
 
 // Update bar chart function
-function updateBar(kpi, barChart, width, height, seasonsArray, metricsBench, returnBtn){
+function updateBar(kpi, barChart, width, height, seasonsArray, metricsBench, returnBtn, returnTxt){
   var position = document.getElementsByClassName("grid-item")[0].innerText.slice(11,);
   var metrics = kpi;
   var benchmark;
@@ -2272,6 +2286,7 @@ function updateBar(kpi, barChart, width, height, seasonsArray, metricsBench, ret
     setTimeout(function(){
       if (returnBtn.style.opacity === "0") {
         fadeIn(returnBtn, "inline-block", 10);
+        fadeIn(returnTxt, "inline-block", 10);
       }
     }, 300);
 

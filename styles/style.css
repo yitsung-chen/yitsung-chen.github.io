@@ -373,7 +373,7 @@ div.web-dev>img{
     grid-template-columns: auto;
     grid-row-gap: 10px;
     width: 90%;
-    height: 100%;
+    /* height: 100%; */
   }
   .project-card{
     height: 33vh;
@@ -1483,7 +1483,7 @@ th,td{
   /* height: 90%; */
   position: relative;
   padding-top: 10%;
-  padding-bottom: 10%;
+  padding-bottom: 3%;
   background-color: #F5F5F5;
   /* border-bottom: 1px solid; */
 }
@@ -1492,6 +1492,10 @@ th,td{
   border-radius: 5px;
   box-shadow: 4px 4px 10px #767676;
   /* margin: -20px auto 0px; */
+}
+.data-dash-page.navbar-container{
+  /* border: 1px solid; */
+  margin: 3% 25% 0% 25%;
 }
 .project-reference-link.data-viz{
   color: #ff4422;
@@ -1575,22 +1579,23 @@ ol.project-section-context>li{
   /* border: 1px solid; */
   text-align: center;
   padding: 20px 0;
-  margin-top: 40px;
+  margin-top: 3%;
 }
 .project-link-wrapper>a{
   color: #161616;
   text-decoration: none;
-  border: 2px solid;
+  border: 1px solid;
   border-radius: 5px;
-  padding: 5px 12px;
+  padding: 5px 15px;
+  /* box-shadow: 1px 2px 1px #a2a2a2; */
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   letter-spacing: .5px;
   transition: border .25s, color .25s, background .25s;
 }
 .project-link-wrapper>a:hover{
   background: black;
-  border: 2px solid black;
+  border: 1px solid black;
   color: white;
   transition: border .25s, color .25s, background .25s;
 }
@@ -1603,9 +1608,15 @@ ol.project-section-context>li{
 .side-wrapper.img.data-viz{
   height: 100%;
 }
-
-@media (max-width: 1199.98px){
-
+.project-section-context.foot-note.data-viz{
+  margin-top: 120px;
+  margin-bottom: 0;
+}
+.enlarge-context{
+  font-size: 1.15rem;
+  color: #ff5544;
+  font-style: italic;
+  font-weight: bolder;
 }
 @media (max-width: 991.98px){
   ol.project-section-context{
@@ -1656,6 +1667,9 @@ ol.project-section-context>li{
     width: 74%;
     letter-spacing: 0px;
   }
+  .enlarge-context{
+    font-size: 1.05rem;
+  }
 }
 @media (max-width: 414.98px){
   .project-img.data-viz{
@@ -1664,9 +1678,17 @@ ol.project-section-context>li{
   .project-page-big-title.social-media>span{
     display: none;
   }
+  .project-link-wrapper{
+    /* border: 1px solid; */
+    margin-top: 4%;
+    margin-bottom: 7.5%;
+  }
+  .project-link-wrapper>a{
+    padding: 5px 7px;
+    font-size: 1rem;
+    letter-spacing: .5px;
+  }
 }
-
-
 
 /* Contact */
 #contact-header-section{

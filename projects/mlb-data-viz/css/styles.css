@@ -337,7 +337,7 @@ input:checked + .slider:before {
   width: 40px;
   height:40px;
   position: fixed;
-  right:20px;
+  right:25px;
   top:20px;
   padding: 0;
   transition: .25s;
@@ -347,11 +347,11 @@ input:checked + .slider:before {
 #return-text{
   color: #041E42;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   position: fixed;
-  right:12px;
+  right:20px;
   top:58px;
-  opacity: 0;
+  /* opacity: 0; */
   letter-spacing: .4px;
   transition: .25s;
   z-index: 9999;
@@ -359,13 +359,15 @@ input:checked + .slider:before {
 
 #return-btn:hover{
   cursor: pointer;
-  transform: scale(1.3);
+  transform: scale(1.2);
   transition: .25s;
 }
 
 #return-btn:hover ~ #return-text{
-  opacity: 1;
-  transition: .25s;
+  /* opacity: 1; */
+  /* transform: scale(1.2); */
+  /* font-size: 20px; */
+  /* transition: .25s; */
 }
 
 .stats-header{
