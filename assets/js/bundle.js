@@ -71,6 +71,23 @@ $(window).on("load", function(){
       $('.header-container').animate({"opacity":"1"},500);
       // $('.navbar-container').animate({"opacity":"1"},200);
       $('#home-project-section').animate({"opacity":"1"},500);
+
+
+      $('.projects-jumper').bind('click', function(e) {
+        e.preventDefault(); // prevent hard jump, the default behavior
+
+        var target = $(this).attr("href"); // Set the target as variable
+
+        // perform animated scrolling by getting top-position of target-element and set it as scroll target
+        $('html, body').stop().animate({
+            scrollTop: $(target).offset().top-30
+        }, 500, function() {
+            location.hash = target; //attach the hash (#jumptarget) to the pageurl
+        });
+        return false;
+      });
+
+
     }
 
     // Mobile version menu animation when the device width is < 576 px
