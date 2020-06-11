@@ -68,7 +68,7 @@ p.footer{
 .navbar-container {
   /* opacity:0; */
   transition: all .35s;
-  margin: 7% 25% 20% 25%;
+  margin: 0% 25%;
   width: 50%;
 }
 .navbar-container nav{
@@ -116,6 +116,19 @@ p.footer{
   width: 80%;
 }
 
+
+.project-arrow-wrapper{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  /* border: 1px solid; */
+}
+.project-arrow-wrapper>p{
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.small-icon{
+  width: 25px;
+}
 /*Background Image*/
 div.ux-research {
   display: flex;
@@ -349,6 +362,20 @@ div.web-dev>img{
     padding: 2% 50px 10%;
     margin-top: 40px;
   }
+
+  .project-arrow-wrapper{
+    text-align: center;
+    /* border: 1px solid; */
+  }
+  .project-arrow-wrapper>.home-header-greetings{
+    text-align: center;
+    width: 100%;
+    /* border: 1px solid; */
+  }
+  .small-icon{
+    width: 20px;
+  }
+
   .home-header-title{
     /* width: 100%; */
     font-size: 1.5rem;
