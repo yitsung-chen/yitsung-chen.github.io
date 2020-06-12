@@ -1955,7 +1955,9 @@ ul.project-section-context.web-dev-wrapper{
   margin-left: 26%;
   margin-bottom: 0px;
 }
-
+.project-link-wrapper.web-dev-project{
+  margin-top: 0;
+}
 .project-reference-link.movie-trailer{
   color: #f9a513;
 }
