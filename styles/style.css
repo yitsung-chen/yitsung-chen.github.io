@@ -41,7 +41,7 @@ p.footer{
 
 /* Home Page Styling Section */
 .header-container {
-  padding: 8% 50px 4%;
+  padding: 10% 50px 4%;
   text-align: center;
   margin: 0 auto;
   opacity:0;
@@ -126,10 +126,13 @@ p.footer{
   margin-top: 0;
   font-size: .9rem;
   margin-bottom: 0px;
+  font-style: italic;
+  color: #454545;
 }
 .small-icon{
   width: 25px;
-  padding: 5px 20px;
+  padding: 5px 5px;
+  margin-top: 5px;
   cursor: pointer;
   /* border: 1px solid; */
 }
@@ -365,11 +368,13 @@ div.web-dev>img{
 }
 
 @media (max-width: 575.98px) {
-  #home-header-section{
+  #header-section{
     /* border: 1px solid; */
     text-align: left;
     padding: 2% 50px 10%;
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    padding-top: 50px;
+    padding-bottom: 100px;
   }
 
   .project-arrow-wrapper{
@@ -541,21 +546,24 @@ div.web-dev>img{
 }
 
 
-/* Project Body Contents Styling, common */
+
+
+
+
+
+/* Qaimo Project Styling*/
+
 #project-overall-container{
   opacity: 0;
 }
-
-
-#project-header-section{
-  /* width: 100%; */
-  /* height: 90%; */
+.header-container.kaimo-project{
   position: relative;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 6.7%;
+  padding-bottom: 15%;
   background-color: #F5F5F5;
-  /* border-bottom: 1px solid; */
 }
+
+
 #project-content-section>div:nth-of-type(2n){
   background-color: #F5F5F5;
 }
@@ -665,7 +673,8 @@ div.web-dev>img{
   /* margin-left: 25%; */
 }
 .project-banner{
-  margin-top: 50px;
+  /* margin-top: 0px; */
+  padding-top: 28px;
   text-align: center;
 }
 span.kaimo-logo{
@@ -1390,6 +1399,12 @@ th,td{
 .project-section-context.social-media>b{
   font-size: 1.1rem;
 }
+.header-container.social-media-project{
+  position: relative;
+  padding-top: 5.3%;
+  padding-bottom: 15%;
+  background-color: #F5F5F5;
+}
 .two-side-small-wrapper.social-media-overview{
   padding-top: 0;
 }
@@ -1455,9 +1470,14 @@ th,td{
   width: 200px;
   /* border: 1px solid; */
   border-radius: 100%;
-  margin: -20px auto 0px;
+  margin: 0px auto 0px;
 }
-
+.header-container.about{
+  padding: 2% 50px 16%;
+  text-align: center;
+  background: #f5f5f5;
+  margin: 0 auto;
+}
 .project-page-big-title.about-me{
   margin-top: 30px;
   /* margin-bottom: 3rem; */
@@ -1500,17 +1520,17 @@ th,td{
 
 
 /* MLB Project */
-#project-header-section-data-viz{
-  width: 100%;
-  /* height: 90%; */
+.header-container.data-viz-project{
   position: relative;
-  padding-top: 5%;
-  padding-bottom: 2%;
+  padding-top: 2%;
+  padding-bottom: 5%;
   background-color: #F5F5F5;
-  /* border-bottom: 1px solid; */
+}
+.project-page-big-title.data-viz-project{
+  margin-top: 58px;
 }
 .project-img.rect{
-  width: 360px;
+  width: 320px;
   border-radius: 5px;
   box-shadow: 4px 4px 10px #767676;
   /* margin: -20px auto 0px; */
@@ -1601,7 +1621,7 @@ ol.project-section-context>li{
   /* border: 1px solid; */
   text-align: center;
   padding: 20px 0;
-  margin-top: 3%;
+  margin-top: 6%;
 }
 .project-link-wrapper>a{
   color: #161616;
@@ -1675,7 +1695,7 @@ ol.project-section-context>li{
 }
 @media (max-width: 575.98px){
   .project-img.rect{
-    width: 300px;
+    width: 285px;
   }
   ol.project-section-context{
     width: 71%;
@@ -1717,17 +1737,16 @@ ol.project-section-context>li{
 
 /* Contact */
 .project-img.contact {
-  width: 140px;
-  margin: 40px auto 0;
+  width: 100px;
+  margin: 0px auto 0;
 }
-#contact-header-section{
-  width: 100%;
-  position: relative;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  background-color: #F5F5F5;
-  /* border-bottom: 1px solid; */
+.header-container.contact{
+  padding: 11.95% 50px 18%;
+  text-align: center;
+  background: #f5f5f5;
+  margin: 0 auto;
 }
+
 .project-page-big-title.contact{
   margin-bottom: 80px;
   margin-top: 10px;
@@ -1896,20 +1915,20 @@ ol.project-section-context>li{
 
 
 /* web devlopment projects */
-#web-dev-project-header-section{
-  /* width: 100%; */
-  /* height: 90%; */
+.header-container.web-dev-project{
   position: relative;
-  padding-top: 6%;
-  padding-bottom: 5%;
+  padding-top: 2%;
+  padding-bottom: 15%;
   background-color: #F5F5F5;
-  /* border-bottom: 1px solid; */
 }
 .project-img.rect.web-dev{
   box-shadow: none;
 }
+.project-page-big-title.web-dev-project{
+  margin-top: 50px;
+}
 .project-page-title-description.web-dev{
-  margin-bottom: 0px;
+  margin-bottom: 64px;
 }
 .one-side-small-wrapper.web-dev-wrapper{
   /* padding-top: 0; */
