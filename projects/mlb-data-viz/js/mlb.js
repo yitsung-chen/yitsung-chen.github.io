@@ -1100,7 +1100,13 @@ function seasonStatsParse(season, position, seasonData){
       seasonDataMerge["avg"] = String(Math.round(Number(seasonDataMerge["h"])/Number(seasonDataMerge["ab"])*1000)/1000).slice(1,);
       seasonDataMerge["slg"] = String(Math.round(Number(slgNom/seasonDataMerge["ab"])*1000)/1000).slice(1,);
       seasonDataMerge["obp"] = String(Math.round(obpNom/obpDenom*1000)/1000).slice(1,);
-      seasonDataMerge["ops"] = String(Math.round((Number(seasonDataMerge["slg"]) + Number(seasonDataMerge["obp"]))*1000)/1000).slice(1,);
+      seasonDataMerge["ops"] = Math.round((Number(seasonDataMerge["slg"]) + Number(seasonDataMerge["obp"]))*1000)/1000;
+
+      if (seasonDataMerge["ops"]>=1) {
+        seasonDataMerge["ops"] = String(seasonDataMerge["ops"]);
+      }else {
+        seasonDataMerge["ops"] = String(seasonDataMerge["ops"]).slice(1,);
+      }
     }
 
     // Merge multi seasonal data then append into another data array
