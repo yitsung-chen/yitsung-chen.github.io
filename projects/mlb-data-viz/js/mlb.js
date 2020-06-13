@@ -1802,15 +1802,15 @@ function donutContruction(init, dataEntry, donutChart, donutLabel, width, height
 
   var arc = d3.arc()
     .innerRadius(function(){
-      if (width[1] <= 450) {
-        return 80;
+      if (window.innerWidth <= 450) {
+        return radius*0.6;
       }else{
-        return 100;
+        return radius*0.7;
       }
     })         // This is the size of the donut hole
     .outerRadius(function(){
-      if (width[1] <= 450) {
-        return radius*0.85;
+      if (window.innerWidth <= 450) {
+        return radius*0.9;
       }else{
         return radius;
       }
