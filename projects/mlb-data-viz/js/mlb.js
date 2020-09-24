@@ -622,7 +622,7 @@ function InfoDisplay(playerId, playerInfoData, preloader){
   //
   // playerImg.onerror = function(){
   playerImg.onload = function(){
-    displayInfo()
+    displayInfo();
     img.src = this.src;
   }
 
