@@ -609,8 +609,8 @@ function InfoDisplay(playerId, playerInfoData, preloader){
   var dashHeaderContainer = document.getElementById("dash-header");
   // var playerImg = new Image();
   // var playerImgUrl = "https://securea.mlb.com/mlb/images/players/head_shot/" + playerId + ".jpg";
-  var pitcherUrl = "../imgs/pitcher.jpg";
-  var batterUrl = "../imgs/batter.jpg";
+  var pitcherUrl = "imgs/pitcher.jpg";
+  var batterUrl = "imgs/batter.jpg";
   var img = document.getElementById("player-pic");
   var returnBtn = document.getElementById("return-btn");
   var weekAvgEle = document.getElementById("w-avg");
