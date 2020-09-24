@@ -607,10 +607,10 @@ function seasonStats(playerId, currentSeason){
 function InfoDisplay(playerId, playerInfoData, preloader){
 
   var dashHeaderContainer = document.getElementById("dash-header");
-  var playerImg = new Image();
+  // var playerImg = new Image();
   // var playerImgUrl = "https://securea.mlb.com/mlb/images/players/head_shot/" + playerId + ".jpg";
-  var pitcherUrl = "https://github.com/yitsung-chen/yitsung-chen.github.io/blob/master/projects/mlb-data-viz/imgs/pitcher.jpg";
-  var batterUrl = "https://github.com/yitsung-chen/yitsung-chen.github.io/blob/master/projects/mlb-data-viz/imgs/batter.jpg";
+  var pitcherUrl = "../imgs/pitcher.jpg";
+  var batterUrl = "../imgs/batter.jpg";
   var img = document.getElementById("player-pic");
   var returnBtn = document.getElementById("return-btn");
   var weekAvgEle = document.getElementById("w-avg");
@@ -621,15 +621,17 @@ function InfoDisplay(playerId, playerInfoData, preloader){
   // }
   //
   // playerImg.onerror = function(){
-  playerImg.onload = function(){
-    displayInfo();
-    img.src = this.src;
-  }
+  // playerImg.onload = function(){
+  //   displayInfo();
+  //   img.src = this.src;
+  // }
 
   if (playerInfoData.primary_position_txt === "P") {
-    playerImg.src = pitcherUrl;
+    img.src = pitcherUrl;
+    displayInfo();
   }else{
-    playerImg.src = batterUrl;
+    img.src = batterUrl;
+    displayInfo();
   }
   // }
 
