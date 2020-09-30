@@ -1171,6 +1171,7 @@ function dashboardBuilder(kpi){
 
   var height = [document.getElementById("bar-chart").offsetHeight, document.getElementById("donut-chart").offsetHeight, document.getElementById("line-chart").offsetHeight];
   var width = [document.getElementById("bar-chart").offsetWidth, document.getElementById("donut-chart").offsetWidth, document.getElementById("line-chart").offsetWidth];
+  var deviceWidth = window.innerWidth;
 
   // Return only the unique years of season
   seasonsArray = [...new Set(seasonsArray)];
@@ -1184,56 +1185,61 @@ function dashboardBuilder(kpi){
 
   // Resize window
   window.addEventListener("resize", function(){
-
-    var barMetrics = document.getElementById("bar-metrics-option");
-    var lineTooltipContainer = document.getElementsByClassName("line-tooltip-container")[0];
-    var lineTooltipDash = document.querySelector(".line-tooltip-dash");
-    var lineTooltip = document.querySelector(".line-tooltip");
-
-    if (lineTooltipContainer !== undefined && lineTooltipContainer !== null) {
-      console.log(lineTooltipContainer);
-
-      lineTooltipContainer.remove();
-    }
-
-    if (lineTooltipDash !== undefined && lineTooltipDash !== null) {
-      lineTooltipDash.remove();
-    }
-
-    if (lineTooltip !== undefined && lineTooltip !== null) {
-      lineTooltip.remove();
-    }
-
-
-    lineLegPos = [];
-    donutDefault = barsIndexClicked;
-
-    if (barMetrics === undefined) {
-      return
+    if (window.innerWidth === deviceWidth) {
+      return;
     }else{
+      var barMetrics = document.getElementById("bar-metrics-option");
+      var lineTooltipContainer = document.getElementsByClassName("line-tooltip-container")[0];
+      var lineTooltipDash = document.querySelector(".line-tooltip-dash");
+      var lineTooltip = document.querySelector(".line-tooltip");
 
-      var currentMetrics = barMetrics.options[barMetrics.selectedIndex].value.toLowerCase();
+      deviceWidth = window.innerWidth;
 
-      if (currentMetrics === "k") {
-        kpi = "so";
-      }else{
-        kpi =  currentMetrics;
+      if (lineTooltipContainer !== undefined && lineTooltipContainer !== null) {
+        console.log(lineTooltipContainer);
+
+        lineTooltipContainer.remove();
+      }
+
+      if (lineTooltipDash !== undefined && lineTooltipDash !== null) {
+        lineTooltipDash.remove();
+      }
+
+      if (lineTooltip !== undefined && lineTooltip !== null) {
+        lineTooltip.remove();
       }
 
 
-      barChart.selectAll("g").remove();
-      barChart.selectAll("rect").remove();
-      barChart.selectAll("text").remove();
+      lineLegPos = [];
+      donutDefault = barsIndexClicked;
 
-      lineChart.selectAll("g").remove();
+      if (barMetrics === undefined) {
+        return
+      }else{
 
-      donutChart.selectAll("g").remove();
+        var currentMetrics = barMetrics.options[barMetrics.selectedIndex].value.toLowerCase();
 
-      height = [document.getElementById("bar-chart").offsetHeight, document.getElementById("donut-chart").offsetHeight, document.getElementById("line-chart").offsetHeight];
-      width = [document.getElementById("bar-chart").offsetWidth, document.getElementById("donut-chart").offsetWidth, document.getElementById("line-chart").offsetWidth];
+        if (currentMetrics === "k") {
+          kpi = "so";
+        }else{
+          kpi =  currentMetrics;
+        }
 
-      dashConstruction(kpi, metricsBench, barChart, donutLabel, donutDefault, donutChart, lineChart, height, width, seasonsArray);
 
+        barChart.selectAll("g").remove();
+        barChart.selectAll("rect").remove();
+        barChart.selectAll("text").remove();
+
+        lineChart.selectAll("g").remove();
+
+        donutChart.selectAll("g").remove();
+
+        height = [document.getElementById("bar-chart").offsetHeight, document.getElementById("donut-chart").offsetHeight, document.getElementById("line-chart").offsetHeight];
+        width = [document.getElementById("bar-chart").offsetWidth, document.getElementById("donut-chart").offsetWidth, document.getElementById("line-chart").offsetWidth];
+
+        dashConstruction(kpi, metricsBench, barChart, donutLabel, donutDefault, donutChart, lineChart, height, width, seasonsArray);
+
+      }
     }
 
   });
