@@ -335,7 +335,11 @@ div.web-dev {
   .project-footer-text{
     font-size: .65rem;
   }
-
+  .navbar-container{
+    /* border: 1px solid; */
+    width: 70%;
+    margin-left: 15%;
+  }
 }
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -365,12 +369,12 @@ div.web-dev {
     height: 35vw;
   }
   .project-name{
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-top: 6%;
   }
   .project-prompt-text{
     font-size: .7rem;
-    line-height: 1.4rem;
+    line-height: 1.2rem;
     margin-top: 1%;
     margin-bottom: 2%;
   }
@@ -438,10 +442,18 @@ div.web-dev {
     /* height: 100%; */
   }
   .project-card{
-    height: 33vh;
+    height: 45vh;
+  }
+  .project-prompt-text{
+    font-size: .8rem;
+    /* border: 1px solid; */
+    line-height: 1.4rem;
+    margin-top: 5%;
+    margin-bottom: 6.5%;
   }
   .project-name{
-    padding-top: 5%;
+    font-size: 1.2rem;
+    padding-top: 6%;
   }
 
   /* Mobile curtain navbar styling */
@@ -541,9 +553,12 @@ div.web-dev {
   }
 }
 @media (max-width: 414.98px) {
+  .project-card{
+    height: 38vh;
+  }
   .project-name{
     font-size: 1.1rem;
-    padding-top: 10%;
+    padding-top: 8%;
   }
   .project-prompt-text{
     font-size: .75rem;
@@ -561,7 +576,7 @@ div.web-dev {
 
 @media (max-width: 379.98px) {
   .project-card{
-    height: 60vw;
+    height: 70vw;
   }
   .project-name{
     padding-top: 2%;
