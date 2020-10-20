@@ -2004,6 +2004,17 @@ ul.project-section-context.web-dev-wrapper{
   border-bottom: 3px solid #f39a13;
 }
 
+.skill-label{
+  font-weight:600;
+  background: #676767;
+  color: white;
+  font-size: 45%;
+  border-radius: 4px;
+  padding: 3px 6px 3px;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
 @media (max-width: 1199.98px){
   .one-side-small-wrapper.web-dev-wrapper{
     /* padding-top: 0; */
