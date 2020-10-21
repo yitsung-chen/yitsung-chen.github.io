@@ -1441,9 +1441,8 @@ th {
 
 .header-container.photo-gallery {
 	position: relative;
-	height: 100vh;
 	padding-top: 4%;
-	padding-bottom: 0%;
+	padding-bottom: 12%;
 	background-color: #f5f5f5
 }
 
@@ -1627,6 +1626,10 @@ ol.project-section-context>li {
 	}
 	.project-section-sub-title.data-viz:first-of-type {
 		margin-top: 40px
+	}
+	.navbar-container.photo-gallery {
+		margin: 0;
+		margin-left: 15%;
 	}
 }
 
@@ -1966,8 +1969,8 @@ ul.project-section-context.web-dev-wrapper {
   -webkit-column-count: 2;
   -webkit-column-gap: 1.3em;
   -webkit-column-fill: auto;
-  -moz-column-count: 3;
-  -moz-column-gap: 1.875em;
+  -moz-column-count: 2;
+  -moz-column-gap: 1.3em;
   -moz-column-fill: auto;
   column-count: 2;
   column-gap: 0.8em;
@@ -1980,13 +1983,23 @@ ul.project-section-context.web-dev-wrapper {
     column-break-inside: avoid;
 }
 .item>a>img{
-  width: 95%;
+  width: 90%;
   border-radius: 5px;
   transition: box-shadow 300ms;
-  box-shadow: 5px 5px 8px #a2a2a2;
+  box-shadow: 5px 5px 5px #a2a2a2;
 }
 .item>a>img:hover{
   cursor: pointer;
   transition: box-shadow 300ms;
-  box-shadow: 2px 2px 5px #999;
+  box-shadow: 2px 2px 3px #999;
+}
+
+@media (max-width: 991.98px) {
+	.gallery-container{
+	  width: 90%;
+	  margin-left: 10%;
+	  -webkit-column-count: 1;
+	  -moz-column-count: 1;
+	  column-count: 1;
+	}
 }
