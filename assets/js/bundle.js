@@ -1,6 +1,21 @@
 // $('.preloader').animate({"opacity":"1"},500);
 
-$(window).on("load", function(){
+ if($(document).find("title").text() !== "Yi-Tsung - B&W Photography" || $(document).find("title").text() !== "Yi-Tsung Chen"){
+   $(window).on("load", function(){
+     showPage();
+   });
+ }else {
+   showPage();
+ }
+// Mobile navbar function
+function openNav() {
+  document.getElementById("small-width-navbar").style.width = "100%";
+}
+function closeNav() {
+  document.getElementById("small-width-navbar").style.width = "0%";
+}
+
+function showPage() {
   $('.header-container').animate({"opacity":"1"},500);
   if ($(document).find("title").text() !== "Yi-Tsung Chen") {
     $('#project-overall-container').animate({"opacity":"1"},500);
@@ -90,12 +105,4 @@ $(window).on("load", function(){
       $('.mobile-nav-switch-container').css("opacity","0");
     }
   });
-
-});
-// Mobile navbar function
-function openNav() {
-  document.getElementById("small-width-navbar").style.width = "100%";
-}
-function closeNav() {
-  document.getElementById("small-width-navbar").style.width = "0%";
 }

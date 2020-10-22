@@ -4,6 +4,7 @@ html {
 	padding: 0;
 	margin: 0
 }
+
 body {
 	background: url(../assets/imgs/bg.png);
 	font-family: 'Source Sans Pro', sans-serif;
@@ -321,7 +322,7 @@ div.web-dev {
 	}
 	.navbar-container {
 		width: 70%;
-		margin-left: 15%;
+		margin-left: 15%
 	}
 }
 
@@ -354,7 +355,7 @@ div.web-dev {
 		font-size: .7rem;
 		line-height: 1.2rem;
 		margin-top: 1%;
-		margin-bottom: 2%;
+		margin-bottom: 2%
 	}
 	.project-footer-text {
 		font-size: .6rem;
@@ -372,7 +373,7 @@ div.web-dev {
 @media (max-width:575.98px) {
 	#header-section {
 		text-align: left;
-		padding: 30% 55px 7.5%;
+		padding: 30% 55px 7.5%
 	}
 	.project-arrow-wrapper {
 		display: none
@@ -405,11 +406,11 @@ div.web-dev {
 		font-size: .8rem;
 		line-height: 1.4rem;
 		margin-top: 5%;
-		margin-bottom: 6.5%;
+		margin-bottom: 6.5%
 	}
 	.project-name {
 		font-size: 1.2rem;
-		padding-top: 6%;
+		padding-top: 6%
 	}
 	.navbar-container {
 		margin: 0;
@@ -430,10 +431,10 @@ div.web-dev {
 		padding: 4px 8px;
 		float: right;
 		margin-right: 5%;
-		border: 0px solid #ccc;
+		border: 0 solid #ccc;
 		border-radius: 3px;
 		background-color: #fafafa;
-		box-shadow: 2px 2px 3.2px #a1a1a1;
+		box-shadow: 2px 2px 3.2px #a1a1a1
 	}
 	.mobile-nav-switch>div {
 		background: #000;
@@ -507,11 +508,11 @@ div.web-dev {
 
 @media (max-width:414.98px) {
 	.project-card {
-		height: 38vh;
+		height: 38vh
 	}
 	.project-name {
 		font-size: 1.1rem;
-		padding-top: 8%;
+		padding-top: 8%
 	}
 	.project-prompt-text {
 		font-size: .75rem;
@@ -647,7 +648,7 @@ div.web-dev {
 }
 
 .project-banner>img.photo-gallery {
-	width: 300px;
+	width: 300px
 }
 
 span.kaimo-logo {
@@ -778,7 +779,8 @@ span.kaimo-logo {
 	margin-bottom: 30px;
 	width: 60%;
 	text-align: justify;
-	line-height: 2rem
+	line-height: 2rem;
+	font-size: 1.1rem
 }
 
 .two-side-medium-wrapper.project-methodology-box {
@@ -1461,7 +1463,7 @@ th {
 }
 
 .navbar-container.photo-gallery {
-	margin: 0% 25% 0 25%
+	margin: 0 25% 0 25%
 }
 
 .project-reference-link.data-viz {
@@ -1629,7 +1631,7 @@ ol.project-section-context>li {
 	}
 	.navbar-container.photo-gallery {
 		margin: 0;
-		margin-left: 15%;
+		margin-left: 15%
 	}
 }
 
@@ -1953,53 +1955,63 @@ ul.project-section-context.web-dev-wrapper {
 .skill-label {
 	font-weight: 600;
 	background: #676767;
-	color: white;
+	color: #fff;
 	font-size: 45%;
 	border-radius: 4px;
 	padding: 3px 6px 3px;
 	vertical-align: middle;
-	margin-left: 10px;
+	margin-left: 10px
 }
 
-.gallery-container{
-  width: 60%;
-  margin-left: 20%;
-  overflow: hidden;
-  margin-bottom: -1.3em;
-  -webkit-column-count: 2;
-  -webkit-column-gap: 1.3em;
-  -webkit-column-fill: auto;
-  -moz-column-count: 2;
-  -moz-column-gap: 1.3em;
-  -moz-column-fill: auto;
-  column-count: 2;
-  column-gap: 0.8em;
-  column-fill: auto;
+.gallery-container {
+	width: 60%;
+	margin-left: 20%;
+	margin-bottom: 1.3em;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 1.3em;
+	-webkit-column-fill: auto;
+	-moz-column-count: 2;
+	-moz-column-gap: 1.3em;
+	-moz-column-fill: auto;
+	column-count: 2;
+	column-gap: .8em;
+	column-fill: auto
 }
+
 .item {
-    margin-bottom: 1.3em;
-    -webkit-column-break-inside: avoid;
-    -moz-column-break-inside: avoid;
-    column-break-inside: avoid;
-}
-.item>a>img{
-  width: 90%;
-  border-radius: 5px;
-  transition: box-shadow 300ms;
-  box-shadow: 5px 5px 5px #a2a2a2;
-}
-.item>a>img:hover{
-  cursor: pointer;
-  transition: box-shadow 300ms;
-  box-shadow: 2px 2px 3px #999;
+	margin-bottom: 1.5em;
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	column-break-inside: avoid
 }
 
-@media (max-width: 991.98px) {
-	.gallery-container{
-	  width: 90%;
-	  margin-left: 10%;
-	  -webkit-column-count: 1;
-	  -moz-column-count: 1;
-	  column-count: 1;
+.item>a>img {
+	width: 97%;
+	border-radius: 5px;
+	transition: .3s;
+	box-shadow: 2px 2px 4px #a2a2a2
+}
+
+.item>a>img:hover {
+	cursor: pointer;
+	transition: .3s;
+	transform: scale(0.95);
+}
+
+.project-section-context.photo-gallery {
+	margin-top: 30px;
+	margin-bottom: 30px
+}
+
+@media (max-width:991.98px) {
+	.gallery-container {
+		width: 90%;
+		margin-left: 10%;
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1
+	}
+	.item>a>img {
+		width: 90%;
 	}
 }
