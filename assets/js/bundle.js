@@ -1,11 +1,11 @@
 // $('.preloader').animate({"opacity":"1"},500);
 
- if($(document).find("title").text() !== "Yi-Tsung - B&W Photography" || $(document).find("title").text() !== "Yi-Tsung Chen"){
+ if($(document).find("title").text() === "Yi-Tsung - Photography Work" || $(document).find("title").text() === "Yi-Tsung Chen"){
+   showPage();
+ }else {
    $(window).on("load", function(){
      showPage();
    });
- }else {
-   showPage();
  }
 // Mobile navbar function
 function openNav() {
