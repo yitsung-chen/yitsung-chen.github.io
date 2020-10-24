@@ -157,16 +157,15 @@
           // Once image is loaded replace the src of the HTML element
           img.onload = () => {
             item.classList.remove('asyncImage');
-            return item.nodeName === 'IMG' ?
-              item.src = item.dataset.src :
-              item.style.backgroundImage = `url(${item.dataset.src})`;
-
+            return item.nodeName === 'IMG'?item.src = item.dataset.src:item.style.backgroundImage = `url(${item.dataset.src})`;
           };
         });
       })();
 
-      // init photo lightbox
-      var lightbox = new SimpleLightbox('.item a', { /* options */ });
+      $(window).on("load", function(){
+        // init photo lightbox
+        var lightbox = new SimpleLightbox('.item a', { /* options */ });
+      });
 
     </script>
   </body>
