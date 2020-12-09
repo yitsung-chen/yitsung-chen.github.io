@@ -2024,14 +2024,14 @@ function barConstruction(barChart, kpi, metricsBench, height, width, seasonsArra
 
 
   // Add bar chart y-gridlines
-  barChart.append("g")
-          .attr("class", "bar-gridlines")
-          .attr("transform", "translate( 45, -25)")
-          .transition()
-          .duration(1000)
-          .call(yAxisOutput[2]
-                .tickSize(-width[0]+95)
-                .tickFormat(""));
+  // barChart.append("g")
+  //         .attr("class", "bar-gridlines")
+  //         .attr("transform", "translate( 45, -25)")
+  //         .transition()
+  //         .duration(1000)
+  //         .call(yAxisOutput[2]
+  //               .tickSize(-width[0]+95)
+  //               .tickFormat(""));
 
 
   // Add bar chart x-axis
@@ -2097,7 +2097,7 @@ function barConstruction(barChart, kpi, metricsBench, height, width, seasonsArra
           .enter()
           .append("path")
           .attr("class", "benchmark")
-          .style("stroke", "d45d79")
+          .style("stroke", "#d45d79")
           .style("opacity", "0")
           .style("stroke-width", 1.75)
           // .style("stroke-dasharray",(5,5))
