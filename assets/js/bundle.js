@@ -1,6 +1,6 @@
 // $('.preloader').animate({"opacity":"1"},500);
 
- if($(document).find("title").text() === "Yi Tsung - Photography Work" || $(document).find("title").text() === "Yi Tsung Chen"){
+ if($(document).find("title").text() === "Yi-Tsung - Photography Work" || $(document).find("title").text() === "Yi-Tsung Chen"){
    showPage();
  }else {
    $(window).on("load", function(){
@@ -17,9 +17,9 @@ function closeNav() {
 
 function showPage() {
   $('.header-container').animate({"opacity":"1"},500);
-  if ($(document).find("title").text() !== "Yi Tsung Chen") {
+  if ($(document).find("title").text() !== "Yi-Tsung Chen") {
     $('#project-overall-container').animate({"opacity":"1"},500);
-    if ($(document).find("title").text() === "Yi Tsung - Project Qaimo") {
+    if ($(document).find("title").text() === "Yi-Tsung - Project Qaimo") {
       // Init data table
       var table = $('#example').DataTable( {
         "bAutoWidth": false,
@@ -75,7 +75,7 @@ function showPage() {
     $('#home-project-section').animate({"opacity":"1"},500);
   }
 
-  if ($(document).find("title").text() === "Yi Tsung Chen" || $(document).find("title").text() === "Yi Tsung - About" || $(document).find("title").text() === "Yi Tsung - Contact") {
+  if ($(document).find("title").text() === "Yi-Tsung Chen" || $(document).find("title").text() === "Yi-Tsung - About" || $(document).find("title").text() === "Yi-Tsung - Contact") {
     $('.projects-jumper').bind('click', function(e) {
       e.preventDefault(); // prevent hard jump, the default behavior
 
