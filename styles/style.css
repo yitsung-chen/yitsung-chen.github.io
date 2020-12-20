@@ -635,12 +635,21 @@ div.web-dev {
 
 .project-page-title-description {
 	margin-top: 1.5%;
-	margin-bottom: 5%;
+	margin-bottom: 8%;
 	text-align: center;
 	font-size: .9rem;
-	font-style: italic;
 	color: #666
 }
+.project-page-title-description.additional{
+	margin-top: 8%;
+	margin-bottom: 0%;
+	font-size: 1rem;
+}
+.project-page-title-description.additional>span{
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
 
 .project-banner {
 	padding-top: 28px;
